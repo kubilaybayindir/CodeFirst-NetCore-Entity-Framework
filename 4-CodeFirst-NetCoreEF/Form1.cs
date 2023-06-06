@@ -93,5 +93,11 @@ namespace _4_CodeFirst_NetCoreEF
                 }
             }
         }
+
+        private void BtGoLazyLoadingScreen_Click(object sender, EventArgs e)
+        {
+            FormLazyLoadingEagerLoading formLazyLoadingEagerLoading = new FormLazyLoadingEagerLoading();
+            formLazyLoadingEagerLoading.ShowDialog();
+        }
     }
 }

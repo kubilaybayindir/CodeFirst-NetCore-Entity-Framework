@@ -43,6 +43,7 @@
             this.BtUpdateCategory = new System.Windows.Forms.Button();
             this.TbxUpdateName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.BtGoLazyLoadingScreen = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -188,12 +189,23 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "New Name:";
             // 
+            // BtGoLazyLoadingScreen
+            // 
+            this.BtGoLazyLoadingScreen.Location = new System.Drawing.Point(329, 12);
+            this.BtGoLazyLoadingScreen.Name = "BtGoLazyLoadingScreen";
+            this.BtGoLazyLoadingScreen.Size = new System.Drawing.Size(219, 23);
+            this.BtGoLazyLoadingScreen.TabIndex = 6;
+            this.BtGoLazyLoadingScreen.Text = "Lazy Loading / Eager Loading";
+            this.BtGoLazyLoadingScreen.UseVisualStyleBackColor = true;
+            this.BtGoLazyLoadingScreen.Click += new System.EventHandler(this.BtGoLazyLoadingScreen_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(560, 300);
+            this.Controls.Add(this.BtGoLazyLoadingScreen);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.LbxCategories);
@@ -229,5 +241,6 @@
         private Label label3;
         private TextBox TbxUpdateDesc;
         private Label label4;
+        private Button BtGoLazyLoadingScreen;
     }
 }
